@@ -3,7 +3,7 @@ require("dotenv").config()
 
 mongoose.connect(process.env.connUri)
 
-var conn = mongoose.connection;
+const conn = mongoose.connection;
 
 conn.on("connected", function () {
   console.log("Database is connected successfully");
